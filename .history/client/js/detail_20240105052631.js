@@ -34,6 +34,9 @@ async function getUserById() {
             })
         }
 
+        console.log(relatedNews)
+        console.log(newById)
+
         getRightContent.prepend(`<h1 class="title">${newById.description}</h1>`)
         itemNew[0].insertAdjacentHTML('afterend',
             `<h2 class="title related-title" style="margin-top:30px;color:#BBB">Tin tức liên quan</h2>`)
@@ -42,6 +45,7 @@ async function getUserById() {
         let test = relatedNews.filter(x => {
             return x.id !== newById.id
         })
+        console.log(test)
         let b = test.map(x => {
             return `<div class="items-new">
             <ul>

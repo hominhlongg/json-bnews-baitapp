@@ -42,6 +42,7 @@ async function getUserById() {
         let test = relatedNews.filter(x => {
             return x.id !== newById.id
         })
+        console.log(test)
         let b = test.map(x => {
             return `<div class="items-new">
             <ul>

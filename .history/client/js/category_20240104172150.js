@@ -18,5 +18,5 @@ async function render() {
     }
 
 }
-let errorEl = $('.new-error')
+let errorEl = $('.error')
 render()

@@ -20,6 +20,7 @@ async function getNewById() {
             return x.catId === id
 
         })
+        console.log(htmls)
         let getCatData = await axios.get(categoryApi + '/' + id)
         let getTitle = getCatData.data
 
